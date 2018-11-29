@@ -1,20 +1,18 @@
 var food = {
-	[
-		"week": 1,
-		"food": {
-			"monday": {
-				"normal" = "Spaghetti med köttfärssås",
-				"vego" = "Spaghetti med tofusås",
-				"extra" = "Kycklingklubbor"
-			},
+	week: 48,
+	food: {
+		monday: {
+			normal: "Spaghetti med köttfärssås",
+			vego: "Spaghetti med tofusås",
+			extra: "Kycklingklubbor"
+		},
 
-			"tuesday": {
-				"normal" = "Hamburgare med ketchup",
-				"vego" = "Quornburgare med ketchup",
-				"extra" = "Kycklingklubbor"
-			}
+		tuesday: {
+			normal: "Hamburgare med ketchup",
+			vego: "Quornburgare med ketchup",
+			extra: "Kycklingklubbor"
 		}
-	]
+	}	
 };
 
 //cookie handling functions
@@ -59,5 +57,9 @@ $(window).on("load", function(){
 	}else{
 		$('.info').show();
 	}
+
+	$(".navbar").on("click", function(){
+		alert(food.food.monday.normal);
+	});
 
 });
