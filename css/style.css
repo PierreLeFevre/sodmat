@@ -3,6 +3,7 @@ body{
 	width: 100vw;
 	overflow: hidden;
 	margin: 0;
+	font-family: "Open Sans";
 }
 
 *{
@@ -47,7 +48,7 @@ body{
 	font-family: 'Raleway', sans-serif;
 	user-select: none;
 	font-size: 2rem;
-	margin-left: 1rem;
+	margin: 0;
 }
 
 .info{
@@ -87,20 +88,81 @@ body{
 	white-space: nowrap;
 }
 
-@media only screen and (max-width: 820px) {
-	body{
-		position: fixed;
-	}
-
-	.wrapper{
-		position: relative;
-	}
-
-	.navbar{
-		white-space: nowrap;
-		z-index: 2500;
-	}
+.foodContainer{
+	height: calc(100vh - 50px);
+	width: 100vw;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	overflow-y: auto;
 }
 
-@media only screen and (max-width: 620px) {
+.foodScroller{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.day{
+	width: 100vw;
+	margin: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.day-1, .day-3, .day-5{
+	background: #fff;
+}
+
+.day-2, .day-4{
+	background: #FAFAF5;
+}
+
+.dayHeader{
+	line-height: 2rem;
+	font-size: 1.5rem;
+}
+
+.course{
+	line-height: 1rem;
+	font-size: 1rem;	
+}
+
+.course-normal{
+	font-weight: bold;
+	color: #333;
+}
+
+.course-vego, .course-extra{
+	color: #555;
+}
+
+.desktopSchema{
+	display: none;
+}
+
+@media only screen and (min-width: 820px) {
+
+	.foodContainer{
+		height: auto;
+	}
+
+	.foodScroller{
+		flex-direction: row;
+	}
+
+	.desktopSchema{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100vw;
+		overflow: hidden;
+		border: 0;
+	}
+
 }
