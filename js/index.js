@@ -1,33 +1,28 @@
 var food = {
 	48: {
 		1: {
-			normal: "Spaghetti med köttfärssås",
-			vego: "Spaghetti med tofusås",
-			extra: "Kycklingklubbor"
+			normal: "Oxjärpar med gräddsås & potatis",
+			vego: "Falafelbiff med gräddsås & potatis"
 		},
 
 		2: {
-			normal: "Hamburgare med ketchup",
-			vego: "Quornburgare med ketchup",
-			extra: "Kycklingklubbor"
+			normal: "Kyckling med sweet chili serveras med ris",
+			vego: "Vegobitar med sweet chili serveras med ris"
 		},
 
 		3: {
-			normal: "Spaghetti med köttfärssås",
-			vego: "Spaghetti med tofusås",
-			extra: "Kycklingklubbor"
+			normal: "Panerad fiskfilé med kall örtsås och potatis",
+			vego: "Blomkål & ostbiffar med kall örtsås och potatis"
 		},
 
 		4: {
-			normal: "Hamburgare med ketchup",
-			vego: "Quornburgare med ketchup",
-			extra: "Kycklingklubbor"
+			normal: "Spaghetti Bolognese",
+			vego: "Spaghetti med vegetarisk Bolognese"
 		},
 
 		5: {
-			normal: "Spaghetti med köttfärssås",
-			vego: "Spaghetti med tofusås",
-			extra: "Kycklingklubbor"
+			normal: "Falukorv i tomatsås serveras med potatismos",
+			vego: "Vegokorv i tomatsås serveras med potatismos"
 		}
 	},
 };
@@ -89,8 +84,11 @@ $(window).on("load", function(){
 
 		$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[new Date().getWeek()][i].normal) + '</p>');
 		$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[new Date().getWeek()][i].vego) + '</p>');
-		$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[new Date().getWeek()][i].extra) + '</p>');		
 
+		if(food[new Date().getWeek()][i].extra){
+			$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[new Date().getWeek()][i].extra) + '</p>');
+		};
+		
 	};
 
 	$(".desktopSchema").height( ( $(window).height() ) - 50 - ( $(".foodContainer").height() ) );
