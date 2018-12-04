@@ -234,7 +234,7 @@ $(window).on("load", function(){
 			}
 
         },
-        triggerOnTouchEnd:false,
+        allowPageScroll: "vertical",
         threshold:30
       });
     });
