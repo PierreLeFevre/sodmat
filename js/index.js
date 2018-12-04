@@ -186,6 +186,9 @@ $(window).on("load", function(){
 		$('.info').show();
 	}
 
+
+	$(".selectedWeek").text(new Date().getWeek());
+
 	updateFood();
 
 	// Swiping functions
