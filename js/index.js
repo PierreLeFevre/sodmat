@@ -234,6 +234,7 @@ $(window).on("load", function(){
 			}
 
         },
+        triggerOnTouchEnd:false,
         threshold:30
       });
     });
