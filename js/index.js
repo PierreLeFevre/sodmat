@@ -105,6 +105,8 @@ var food = {
 	},
 };
 
+var weekModifier = 0;
+
 // get week
 Date.prototype.getWeek = function(){
 	        var onejan = new Date(this.getFullYear(), 0, 1);
@@ -146,6 +148,36 @@ function infoClose(){
 	$( ".input-idnumber" ).focus();
 }
 
+function updateFood(){
+
+	$(".selectedWeek").text((new Date().getWeek()+weekModifier));
+
+	$(".foodScroller").empty();
+
+	setTimeout(showFood, 200);
+	function showFood() {
+    	$(".foodScroller").css({"transform": "translateX(0)", "opacity": 1});
+	}
+
+
+	for (var i = 1; i <= 5; i++) {
+
+		var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+
+		$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+
+		$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
+		$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
+
+		if(food[new Date().getWeek()][i].extra){
+			$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
+		};
+	};
+
+
+	$(".desktopSchema").height( ( $(window).height() ) - 50 - ( $(".foodContainer").height() ) );
+};
+
 $(window).on("load", function(){
 
 	if(readCookie("infoClosed") == "closed"){
@@ -154,22 +186,62 @@ $(window).on("load", function(){
 		$('.info').show();
 	}
 
-	for (var i = 1; i <= 5; i++) {
+	updateFood();
 
-		var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+	// Swiping functions
+	$(function() {
+      //Enable swiping...
+      $(".foodScroller").swipe( {
+        //Single swipe handler for left swipes
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
-		$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+        	if($(window).width() <= 820){
 
-		$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[new Date().getWeek()][i].normal) + '</p>');
-		$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[new Date().getWeek()][i].vego) + '</p>');
+        		if ((new Date().getWeek() + weekModifier) < 51){
+        			weekModifier += 1;
+        			$(".foodScroller").css({"transform": "translateX(-200%)"});
 
-		if(food[new Date().getWeek()][i].extra){
-			$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[new Date().getWeek()][i].extra) + '</p>');
-		};
-		
-	};
+					setTimeout(hideAndMoveLeft, 100);
+					function hideAndMoveLeft() {
+					$(".foodScroller").css({"transform": "translateX(200%)", "opacity": 0});
+					}
+        		};
 
-	$(".desktopSchema").height( ( $(window).height() ) - 50 - ( $(".foodContainer").height() ) );
+
+	        	updateFood();
+			}
+
+        },
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+
+        	if($(window).width() <= 820){
+
+        		if ((new Date().getWeek() + weekModifier) > 48){
+        			weekModifier -= 1;
+        		
+        			$(".foodScroller").css({"transform": "translateX(200%)"});
+
+					setTimeout(hideAndMoveRight, 100);
+					function hideAndMoveRight() {
+					$(".foodScroller").css({"transform": "translateX(-200%)", "opacity": 0});
+					}
+        		};
+
+	        	updateFood();
+			}
+
+        },
+        swipeUp:function(event, direction, distance, duration, fingerCount) {
+
+        	weekModifier -= 1;
+        	$(".foodScroller").fadeOut('fast');
+        	updateFood();
+        	$(".foodScroller").fadeIn('fast');
+
+        },
+        threshold:30
+      });
+    });
 
 });
 
