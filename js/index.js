@@ -68,8 +68,8 @@ var food = {
 		},
 
 		4: {
-			normal: "Julbord",
-			vego: "Julbord"
+			normal: "(Idrottsdag) Julbord",
+			vego: "(Idrottsdag) Julbord"
 		},
 
 		5: {
