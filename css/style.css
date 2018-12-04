@@ -99,6 +99,7 @@ body{
 
 .foodScroller{
 	padding: 0;
+	padding-bottom: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -154,6 +155,7 @@ body{
 
 	.foodScroller{
 		flex-direction: row;
+		padding: 0;
 	}
 
 	.desktopSchema{
