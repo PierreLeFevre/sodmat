@@ -234,14 +234,6 @@ $(window).on("load", function(){
 			}
 
         },
-        swipeUp:function(event, direction, distance, duration, fingerCount) {
-
-        	weekModifier -= 1;
-        	$(".foodScroller").fadeOut('fast');
-        	updateFood();
-        	$(".foodScroller").fadeIn('fast');
-
-        },
         threshold:30
       });
     });
