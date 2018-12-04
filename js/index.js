@@ -194,7 +194,7 @@ $(window).on("load", function(){
 	// Swiping functions
 	$(function() {
       //Enable swiping...
-      $(".foodScroller").swipe( {
+      $("body").swipe( {
         //Single swipe handler for left swipes
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
