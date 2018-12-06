@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 }
 
 .day-1, .day-3, .day-5{
-	background: #fff;
+	background-color: #fff;
 }
 
 .day-2, .day-4{
-	background: #FAFAF5;
+	background-color: #FAFAF5;
 }
 
 .dayHeader{
@@ -147,6 +147,16 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 .course-vego, .course-extra{
 	color: #555;
 }
+
+.today{
+	animation: giveColor .3s ease-in-out;
+	background-color: #bbb;
+}
+
+@keyframes giveColor{
+	from{background-color: #fff;}
+	to{background-color: #bbb;}
+};
 
 .desktopSchema{
 	display: none;
