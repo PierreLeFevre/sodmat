@@ -185,19 +185,9 @@ function updateFood(){
 
 $(window).on("load", function(){
 
-	var jqxhr = $.getJSON( "food.json", function(data) {
-		console.log( "success" );
-		})
-		.done(function(data) {
-			console.log( "second success" );
-			console.log(data);
-		})
-		.fail(function() {
-			console.log( "error" );
-		})
-		.always(function() {
-			console.log( "complete" );
-		});
+	$.getJSON( "food.json", function( json ) {
+		console.log( "JSON Data: " + json["48"] );
+	});
 
 	if(readCookie("infoClosed") == "closed"){
 		$('.info').hide();
