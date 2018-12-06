@@ -189,7 +189,7 @@ $(window).on("load", function(){
 		return( json );
 	});
 
-	console.log(foodJSON["49"]);
+	console.log(foodJSON[49]);
 
 	if(readCookie("infoClosed") == "closed"){
 		$('.info').hide();
