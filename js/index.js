@@ -68,13 +68,13 @@ var food = {
 		},
 
 		4: {
-			normal: "(Idrottsdag) Julbord",
-			vego: "(Idrottsdag) Julbord"
+			normal: "(Idrottsdag) Ingen mat serveras",
+			vego: "(Idrottsdag) Ingen mat serveras"
 		},
 
 		5: {
-			normal: "Mammas spaghetti med körfärssås och KRAV-Ketchup",
-			vego: "Mammas spaghetti med sojafärssås och KRAV-Ketchup"
+			normal: "Julbord",
+			vego: "Julbord"
 		}
 	},
 	51: {
