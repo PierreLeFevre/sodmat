@@ -185,7 +185,7 @@ function updateFood(){
 
 $(window).on("load", function(){
 
-	var jqxhr = $.getJSON( "food.json", function() {
+	var jqxhr = $.getJSON( "food.json", function(data) {
 		console.log( "success" );
 		})
 		.done(function(data) {
