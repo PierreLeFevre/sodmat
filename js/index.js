@@ -156,7 +156,7 @@ function updateFood(){
 
 	setTimeout(showFood, 200);
 	function showFood() {
-    	$(".foodScroller").css({"transform": "translateX(0)", "opacity": 1});
+    	$(".foodScroller").css({"transform": "none", "opacity": 1});
 	}
 
 
@@ -202,11 +202,11 @@ $(window).on("load", function(){
 
         		if ((new Date().getWeek() + weekModifier) < 51){
         			weekModifier += 1;
-        			$(".foodScroller").css({"transform": "translateX(-200%)"});
+        			$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)"});
 
 					setTimeout(hideAndMoveLeft, 100);
 					function hideAndMoveLeft() {
-					$(".foodScroller").css({"transform": "translateX(200%)", "opacity": 0});
+					$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)", "opacity": 0});
 					}
         		};
 
@@ -219,14 +219,14 @@ $(window).on("load", function(){
 
         	if($(window).width() <= 820){
 
-        		if ((new Date().getWeek() + weekModifier) > 48){
+        		if ((new Date().getWeek() + weekModifier) > new Date().getWeek()){
         			weekModifier -= 1;
         		
-        			$(".foodScroller").css({"transform": "translateX(200%)"});
+        			$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)"});
 
 					setTimeout(hideAndMoveRight, 100);
 					function hideAndMoveRight() {
-					$(".foodScroller").css({"transform": "translateX(-200%)", "opacity": 0});
+					$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)", "opacity": 0});
 					}
         		};
 
