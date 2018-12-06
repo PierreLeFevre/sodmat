@@ -185,6 +185,10 @@ function updateFood(){
 
 $(window).on("load", function(){
 
+	$.getJSON( "food.js", function( json ) {
+		console.log( json );
+	});
+
 	if(readCookie("infoClosed") == "closed"){
 		$('.info').hide();
 	}else{
