@@ -185,9 +185,11 @@ function updateFood(){
 
 $(window).on("load", function(){
 
-	$.getJSON( "food.json", function( json ) {
-		console.log( json );
+	var foodJSON = $.getJSON( "food.json", function( json ) {
+		return( json );
 	});
+
+	console.log(foodJSON);
 
 	if(readCookie("infoClosed") == "closed"){
 		$('.info').hide();
