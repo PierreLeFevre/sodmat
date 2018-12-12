@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 	padding: 0;
 	padding-bottom: 50px;
 	display: flex;
-	align-items: center;
+	align-content: center;
 	justify-content: space-around;
 	flex-direction: column;
 	overflow: hidden;
@@ -162,7 +162,17 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 	display: none;
 }
 
+.control{
+	display: none;
+}
+
 @media only screen and (min-width: 1000px) {
+
+	body{
+		background-image: url(../img/panes2.jpg);
+		background-size: cover;
+		background-position: center;
+	}
 
 	.foodContainer{
 		height: auto;
@@ -173,14 +183,7 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 		padding: 0;
 	}
 
-	.desktopSchema{
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100vw;
-		overflow: hidden;
-		border: 0;
+	.control{
+		display: inherit;
 	}
-
 }

@@ -35,15 +35,13 @@ function eraseCookie(name){
 
 //main
 
-function infoClose(){
-	createCookie("infoClosed", "closed", 360);
-	$('.info').hide();
-	$( ".input-idnumber" ).focus();
-}
-
 function updateFood(){
 
 	$(".selectedWeek").text((new Date().getWeek()+weekModifier));
+
+
+	$(".lastWeek").text((new Date().getWeek()+weekModifier-1));
+	$(".nextWeek").text((new Date().getWeek()+weekModifier+1));
 
 	$(".foodScroller").empty();
 
@@ -70,20 +68,45 @@ function updateFood(){
 		if(food[new Date().getWeek()][i].extra){
 			$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
 		};
+
+	};
+};
+
+function nextWeek(){
+
+	if ((new Date().getWeek() + weekModifier) < 51){
+		weekModifier += 1;
+		$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)"});
+
+		setTimeout(hideAndMoveLeft, 100);
+		function hideAndMoveLeft() {
+		$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)", "opacity": 0});
+		}
 	};
 
 
-	$(".desktopSchema").height( ( $(window).height() ) - 50 - ( $(".foodContainer").height() ) );
+	updateFood();
+
+};
+
+function lastWeek(){
+
+	if ((new Date().getWeek() + weekModifier) > new Date().getWeek()){
+		weekModifier -= 1;
+	
+		$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)"});
+
+		setTimeout(hideAndMoveRight, 100);
+		function hideAndMoveRight() {
+		$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)", "opacity": 0});
+		}
+	};
+
+	updateFood();
+
 };
 
 $(window).on("load", function(){
-
-	if(readCookie("infoClosed") == "closed"){
-		$('.info').hide();
-	}else{
-		$('.info').show();
-	}
-
 
 	$(".selectedWeek").text(new Date().getWeek());
 
@@ -96,51 +119,17 @@ $(window).on("load", function(){
         //Single swipe handler for left swipes
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
-        	if($(window).width() <= 820){
-
-        		if ((new Date().getWeek() + weekModifier) < 51){
-        			weekModifier += 1;
-        			$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)"});
-
-					setTimeout(hideAndMoveLeft, 100);
-					function hideAndMoveLeft() {
-					$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)", "opacity": 0});
-					}
-        		};
-
-
-	        	updateFood();
-			}
+        	nextWeek();
 
         },
         swipeRight:function(event, direction, distance, duration, fingerCount) {
 
-        	if($(window).width() <= 820){
-
-        		if ((new Date().getWeek() + weekModifier) > new Date().getWeek()){
-        			weekModifier -= 1;
-        		
-        			$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)"});
-
-					setTimeout(hideAndMoveRight, 100);
-					function hideAndMoveRight() {
-					$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)", "opacity": 0});
-					}
-        		};
-
-	        	updateFood();
-			}
+        	lastWeek();
 
         },
         allowPageScroll: "vertical",
         threshold:30
       });
     });
-
-});
-
-$( window ).resize(function() {
-  
-	$(".desktopSchema").height( ( $(window).height() ) - 50 - ( $(".foodContainer").height() ) );
 
 });
