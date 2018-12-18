@@ -112,6 +112,10 @@ $(window).on("load", function(){
 
 	updateFood();
 
+	//show page
+	$(".loader-main").slideToggle();
+
+
 	// Swiping functions
 	$(function() {
       //Enable swiping...
