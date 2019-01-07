@@ -63,8 +63,6 @@ function updateFood(){
 				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
 			};
 
-			if(isNaN(food[(new Date().getWeek()+weekModifier)])) throw "This week's food had not been made available yet.";
-
 			$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
 			$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
 
