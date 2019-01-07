@@ -37,7 +37,6 @@ function eraseCookie(name){
 
 function updateFood(){
 
-	try{
 
 		$(".selectedWeek").text((new Date().getWeek()+weekModifier));
 
@@ -73,11 +72,6 @@ function updateFood(){
 				$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
 			};
 		};
-	}
-
-	catch(err){
-		$(".day-1").text(err);
-	}
 };
 
 function nextWeek(){
