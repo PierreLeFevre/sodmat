@@ -37,39 +37,47 @@ function eraseCookie(name){
 
 function updateFood(){
 
-	$(".selectedWeek").text((new Date().getWeek()+weekModifier));
+	try{
+
+		$(".selectedWeek").text((new Date().getWeek()+weekModifier));
 
 
-	$(".lastWeek").text((new Date().getWeek()+weekModifier-1));
-	$(".nextWeek").text((new Date().getWeek()+weekModifier+1));
+		$(".lastWeek").text((new Date().getWeek()+weekModifier-1));
+		$(".nextWeek").text((new Date().getWeek()+weekModifier+1));
 
-	$(".foodScroller").empty();
+		$(".foodScroller").empty();
 
-	setTimeout(showFood, 200);
-	function showFood() {
-    	$(".foodScroller").css({"transform": "none", "opacity": 1});
+		setTimeout(showFood, 200);
+		function showFood() {
+	    	$(".foodScroller").css({"transform": "none", "opacity": 1});
+		}
+
+
+		for (var i = 1; i <= 5; i++) {
+
+			var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+
+
+			if ((i == new Date().getDay()) && (weekModifier == 0)) {
+				$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+			}else{
+				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+			};
+
+			if(isNaN(food[(new Date().getWeek()+weekModifier)])) throw "This week's food had not been made available yet.";
+
+			$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
+			$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
+
+			if(food[new Date().getWeek()][i].extra){
+				$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
+			};
+		};
 	}
 
-
-	for (var i = 1; i <= 5; i++) {
-
-		var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
-
-
-		if ((i == new Date().getDay()) && (weekModifier == 0)) {
-			$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-		}else{
-			$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-		};
-
-		$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
-		$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
-
-		if(food[new Date().getWeek()][i].extra){
-			$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
-		};
-
-	};
+	catch(err){
+		$(".day-1").text(err);
+	}
 };
 
 function nextWeek(){
