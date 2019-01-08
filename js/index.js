@@ -106,14 +106,31 @@ function lastWeek(){
 
 };
 
+function resizeTimetable(){
+
+	if($( window ).width() >= 820){
+		$("#schema").show();
+		$("#schema").height((window.innerHeight) - ( $(".navbar").height() + $(".foodContainer").height() ));
+	}else{
+		$("#schema").hide();
+	}
+};
+
 $(window).on("load", function(){
 
 	$(".selectedWeek").text(new Date().getWeek());
 
 	updateFood();
+	resizeTimetable();
 
 	//show page
 	$(".loader-main").slideToggle();
+
+
+	//resize timetable
+	$( window ).resize(function() {
+		resizeTimetable();
+	});
 
 
 	// Swiping functions
