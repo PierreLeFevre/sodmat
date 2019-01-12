@@ -275,7 +275,6 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 @media only screen and (min-width: 1000px) {
 
 	body{
-		background-image: url(../img/panes2.jpg);
 		background-size: cover;
 		background-position: center;
 	}

@@ -1,28 +1,56 @@
 var food = {
-	2: {
+	3: {
 		1: {
-			normal: "Oxpytt serveras med KRAV-rödbetor",
-			vego: "Veggiepytt serveras med KRAV-rödbetor"
+			normal: "Chili con carne med ris & gräddfilsklick",
+			vego: "Chili sin carne med ris & gräddfilsklick"
 		},
 
 		2: {
-			normal: "Pasta carbonara med bacon och svartpeppar",
-			vego: "Pasta vegetarisk carbonara"
+			normal: "Sprödbakad fisk med remouladsås & potatis",
+			vego: "Vegobiff med remouladsås & potatis"
 		},
 
 		3: {
-			normal: "Chicken Tikka Masala med ris",
-			vego: "Quorn Tikka Masala med ris"
+			normal: "Pulled Pork med nachos, ris/bulgur & BBQ-sås",
+			vego: "Pulled Vego med nachos, ris/bulgur & BBQ-sås",
+			extra: "Pulled Chicken"
 		},
 
 		4: {
-			normal: "Broccolisoppa med mjukt bröd & pålägg",
-			vego: "Broccolisoppa med mjukt bröd & pålägg"
+			normal: "Kalkonschnitzel Cordon Bleu med klyftpotatis & skysås",
+			vego: "Zucchini & broccoligratäng med tofu"
 		},
 
 		5: {
-			normal: "Falukorv med stuvade makaroner och KRAV-ketchup",
-			vego: "Sojakorv med stuvade makaroner och KRAV-ketchup"
+			normal: "Pepparbiff med kryddig tomatsås & pasta",
+			vego: "Stekta vegobitar med kryddig tomatsås & pasta"
+		}
+	}
+	4: {
+		1: {
+			normal: "Kebab med pitabröd, sallad, vitlöksdressing & matkorn",
+			vego: "Falafelbiff med pitabröd, sallad, vitlöksdressing & matkorn"
+		},
+
+		2: {
+			normal: "Korv Stroganoff med ris",
+			vego: "Grönsaksrisotto med tomatpesto(nötfri)"
+		},
+
+		3: {
+			normal: "Köttbullar med potatismos & lingonsylt",
+			vego: "Vegobullar med potatismos & lingonsylt"
+		},
+
+		4: {
+			normal: "Gulaschsoppa med mjukt bröd & pålägg",
+			vego: "Vegetarisk gulaschsoppa med mjukt bröd & pålägg"
+		},
+
+		5: {
+			normal: "Helstekt fläskytterfilé med bearnaisesås & potatis",
+			vego: "Vegetarisk Pad Thai med tofu",
+			extra: "Kycklingfilé"
 		}
 	}
 };
