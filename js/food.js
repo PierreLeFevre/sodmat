@@ -25,7 +25,7 @@ var food = {
 			normal: "Pepparbiff med kryddig tomatsås & pasta",
 			vego: "Stekta vegobitar med kryddig tomatsås & pasta"
 		}
-	}
+	},
 	4: {
 		1: {
 			normal: "Kebab med pitabröd, sallad, vitlöksdressing & matkorn",
