@@ -57,11 +57,11 @@ function updateFood(){
 			var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
 
 
-			if ((i == new Date().getDay()) && (weekModifier == 0)) {
-				$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-			}else{
-				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-			};
+				if ((i == new Date().getDay()) && (weekModifier == 0)) {
+					$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+				}else{
+					$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
+				};
 
 			try{
 
@@ -74,27 +74,25 @@ function updateFood(){
 
 			}
 			catch(e){
-				$(".foodScroller").empty();
-				lastWeek();
-				$(".foodScroller").empty();
 			}
 		};
 };
 
 function nextWeek(){
 
-	if ((new Date().getWeek() + weekModifier) < 51){
+	if (((new Date().getWeek() + weekModifier) < 51) && (typeof food[(new Date().getWeek()+weekModifier+1)] !== 'undefined')){
 		weekModifier += 1;
 		$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)"});
 
 		setTimeout(hideAndMoveLeft, 100);
 		function hideAndMoveLeft() {
-		$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)", "opacity": 0});
+			$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)", "opacity": 0});
+			updateFood();
 		}
+
 	};
 
 
-	updateFood();
 
 };
 
@@ -107,11 +105,11 @@ function lastWeek(){
 
 		setTimeout(hideAndMoveRight, 100);
 		function hideAndMoveRight() {
-		$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)", "opacity": 0});
+			$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)", "opacity": 0});
+			updateFood();
 		}
 	};
 
-	updateFood();
 
 };
 
