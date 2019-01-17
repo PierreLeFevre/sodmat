@@ -74,6 +74,7 @@ function updateFood(){
 
 			}
 			catch(e){
+				$(".foodScroller").empty();
 				lastWeek();
 			}
 		};
