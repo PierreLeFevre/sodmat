@@ -63,12 +63,19 @@ function updateFood(){
 				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
 			};
 
-			$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
-			$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
+			try{
 
-			if(food[new Date().getWeek()][i].extra){
-				$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
-			};
+				$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].normal) + '</p>');
+				$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].vego) + '</p>');
+
+				if(food[new Date().getWeek()][i].extra){
+					$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(new Date().getWeek()+weekModifier)][i].extra) + '</p>');
+				};
+
+			}
+			catch(e){
+				lastWeek();
+			}
 		};
 };
 
@@ -136,7 +143,7 @@ $(window).on("load", function(){
 	// Swiping functions
 	$(function() {
       //Enable swiping...
-      $("body").swipe( {
+      $(".foodScroller").swipe( {
         //Single swipe handler for left swipes
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
