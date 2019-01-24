@@ -52,5 +52,33 @@ var food = {
 			vego: "Vegetarisk Pad Thai med tofu",
 			extra: "Kycklingfilé"
 		}
+	},
+	5: {
+		1: {
+			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
+			vego: "Vegoburgare med bröd, sallad, dressing & klyftpotatis"
+		},
+
+		2: {
+			normal: "Pasta med skinksås",
+			vego: "Pasta med ratatouille",
+			extra: "Pasta med kalkonsås"
+		},
+
+		3: {
+			normal: "Panerad fisk med tartarsås & potatis",
+			vego: "Stekt quorn med tartarsås & potatis"
+		},
+
+		4: {
+			normal: "Kycklingklubba med ugnsrostad potatis & rotfrukter serveras med yoghurtsås",
+			vego: "Ugnsbakad potatis & rotfrukter toppad med tofu serveras med yoghurtsås"
+		},
+
+		5: {
+			normal: "Tacofredag! Nachos serveras med nachos, ris & salsa",
+			vego: "Tacofredag! Nachos serveras med nachos, ris & salsa",
+			extra: "Tacofredag! Nachos serveras med nachos, ris & salsa"
+		}
 	}
 };
