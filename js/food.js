@@ -80,5 +80,32 @@ var food = {
 			vego: "Tacofredag! Nachos serveras med nachos, ris & salsa",
 			extra: "Tacofredag! Nachos serveras med nachos, ris & salsa"
 		}
+	},
+	6: {
+		1: {
+			normal: "Falukorv med potatismos & lingonsylt",
+			vego: "Vegokorv med potatismos & lingonsylt",
+			extra: "Nötfalu med potatismos & lingonsylt"
+		},
+
+		2: {
+			normal: "Kycklingrisotto serveras med vitlöksdressing",
+			vego: "Grönsaksrisotto med quinoa & svamp serveras med vitlöksdressing"
+		},
+
+		3: {
+			normal: "Mammas spaghetti med köttfärssås & bästa KRAV-Ketchupen <3",
+			vego: "Mammas spaghetti med soja & bästa KRAV-Ketchupen <3"
+		},
+
+		4: {
+			normal: "Biffsauté med grönsaker serveras med ris",
+			vego: "Dhal, indisk linsgryta serveras med ris"
+		},
+
+		5: {
+			normal: "Oxjärpar med gräddsås, potatis & inlagd gurka",
+			vego: "Falafel med smakrik tomatsås & potatis"
+		}
 	}
 };
