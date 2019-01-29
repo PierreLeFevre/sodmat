@@ -125,8 +125,6 @@ function resizeTimetable(){
 
 $(window).on("load", function(){
 
-	alert("Dagens mat (Tisdag) är tyvärr försenad med ca. 20 minuter. MvH Birgitta.");
-
 	$(".selectedWeek").text(new Date().getWeek());
 
 	updateFood();
