@@ -124,9 +124,14 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 	background-color: #FAFAF5;
 }
 
-.dayHeader{
+.day-header{
 	line-height: 2rem;
 	font-size: 1.5rem;
+}
+
+.day-date{
+	font-weight: 100;
+	font-size: 1rem;
 }
 
 .course{
@@ -145,12 +150,23 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 
 .today{
 	animation: giveColor .3s ease-in-out;
-	background-color: #bbb;
+	background-color: #33673E;
+	color: white;
+}
+
+.today .course-normal{
+	color: #fff;
+	opacity: 0.9;
+}
+
+.today .course-vego, .today .course-extra{
+	color: #fff;
+	opacity: 0.8;
 }
 
 @keyframes giveColor{
 	from{background-color: #fff;}
-	to{background-color: #bbb;}
+	to{background-color: #33673E;}
 };
 
 .desktopSchema{

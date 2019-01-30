@@ -35,16 +35,25 @@ function eraseCookie(name){
 
 //main
 
+var today;
+var thisWeek;
+var modifiedWeek;
+var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+var months = ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'];
+
 function updateFood(){
 
 	//Create date object for upcoming use.
-	var today = new Date();
-	var thisWeek = today.getWeek();
+	today = new Date();
+	thisWeek = today.getWeek();
+	modifiedWeek = thisWeek + weekModifier;
+
+	var changingDate = new Date();
 
 	//Fill buttons with correct surrounding weeks.
-	$(".selectedWeek").text((thisWeek+weekModifier));
-	$(".lastWeek").text((thisWeek+weekModifier-1));
-	$(".nextWeek").text((thisWeek+weekModifier+1));
+	$(".selectedWeek").text((modifiedWeek));
+	$(".lastWeek").text((modifiedWeek-1));
+	$(".nextWeek").text((modifiedWeek+1));
 	
 	//Check if surrounding weeks exist and show buttons accordingly (desktop only).
 	if(weekModifier==0){
@@ -70,22 +79,46 @@ function updateFood(){
     	$(".foodScroller").css({"transform": "none", "opacity": 1});
 
 		for (var i = 1; i <= 5; i++) {
+			
+			//if(weekModifier == 0) changingDate.setDate(today.getDate() + (i - today.getDay()));
 
-			var days = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag'];
+			changingDate.setTime( (Date.now() + (i*24*60*60*1000) - (today.getDay()*24*60*60*1000)) + (weekModifier*7*24*60*60*1000));
 
-				if ((i == new Date().getDay()) && (weekModifier == 0)) {
-					$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-				}else{
-					$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="dayHeader">' + days[i-1] + '</h1></div>');
-				};
+			var boj = "";
+
+			switch(Number(changingDate.getDate().toString().substr(-1))){
+				case 0:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+					boj = "e";
+					break;	
+				case 1:
+				case 2:
+					boj = "a";
+					break;
+			}
+
+			var displayDate = " den " + changingDate.getDate() + ":" + boj + " " + months[changingDate.getMonth()] + " " + changingDate.getFullYear();
+
+
+			if ((i == today.getDay()) && (weekModifier == 0)) {
+				$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="day-header">' + days[i-1] + "<span class='day-date'>&nbsp;" + displayDate + "</span>" + '</h1></div>');
+			}else{
+				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="day-header">' + days[i-1] +  "<span class='day-date'>&nbsp;" + displayDate + "</span>" + '</h1></div>');
+			};
 
 			try{
 
-				$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(thisWeek+weekModifier)][i].normal) + '</p>');
-				$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(thisWeek+weekModifier)][i].vego) + '</p>');
+				$(".day-" + i).append('<p class="course course-normal"><span class="type type-normal">Dagens rätt: </span>' + (food[(modifiedWeek)][i].normal) + '</p>');
+				$(".day-" + i).append('<p class="course course-vego"><span class="type type-vego">Vegetariskt: </span>' + (food[(modifiedWeek)][i].vego) + '</p>');
 
-				if(food[thisWeek+weekModifier][i].extra){
-					$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(thisWeek+weekModifier)][i].extra) + '</p>');
+				if(food[modifiedWeek][i].extra){
+					$(".day-" + i).append('<p class="course course-extra"><span class="type type-extra">Extrarätt: </span>' + (food[(modifiedWeek)][i].extra) + '</p>');
 				};
 
 			}
@@ -101,7 +134,7 @@ function updateFood(){
 
 function nextWeek(){
 
-	if (((new Date().getWeek() + weekModifier) < 51) && (typeof food[(new Date().getWeek()+weekModifier+1)] !== 'undefined')){
+	if (((modifiedWeek) < 51) && (typeof food[(new Date().getWeek()+weekModifier+1)] !== 'undefined')){
 		weekModifier += 1;
 		$(".foodScroller").css({"transform": "translateX(-100%) scale(0.8)"});
 
@@ -119,7 +152,7 @@ function nextWeek(){
 
 function lastWeek(){
 
-	if ((new Date().getWeek() + weekModifier) > new Date().getWeek()){
+	if ((modifiedWeek) > new Date().getWeek()){
 		weekModifier -= 1;
 	
 		$(".foodScroller").css({"transform": "translateX(100%) scale(0.8)"});
@@ -153,8 +186,7 @@ $(window).on("load", function(){
 	resizeTimetable();
 
 	//show page
-	$(".loader-main").slideToggle();
-
+	$(".loader-main").delay(1000).slideToggle();
 
 	//resize timetable
 	$( window ).resize(function() {

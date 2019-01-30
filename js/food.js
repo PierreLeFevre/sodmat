@@ -77,7 +77,7 @@ var food = {
 
 		5: {
 			normal: "Tacofredag! Nachos serveras med tortillachips, ris & salsa",
-			vego: "Tacofredag! Vegoachos serveras med tortillachips, ris & salsa"
+			vego: "Vegonachos serveras med tortillachips, ris & salsa"
 		}
 	},
 	6: {
@@ -94,7 +94,7 @@ var food = {
 
 		3: {
 			normal: "Mammas spaghetti med köttfärssås & bästa KRAV-Ketchupen <3",
-			vego: "Mammas spaghetti med soja & bästa KRAV-Ketchupen <3"
+			vego: "Mammas spaghetti med fake köttfärssås & bästa KRAV-Ketchupen <3"
 		},
 
 		4: {
