@@ -42,6 +42,7 @@
 	<meta name="theme-color" content="#30673c">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100,300" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/spinner.css">
 </head>
@@ -50,9 +51,9 @@
 	<div class="wrapper">
 
 		<nav class="navbar">
-			<h1 class="header control" id="button-lastWeek" onclick="lastWeek();">◀&nbsp;v.<span class="lastWeek number"></span></h1>
+			<h1 class="header control" id="button-lastWeek" onclick="lastWeek();"><i class="fas fa-caret-left"></i>&nbsp;v.<span class="lastWeek number"></span></h1>
 			<h1 class="header" id="label-currentWeek">Meny v.<span class="selectedWeek number"></span></h1>
-			<h1 class="header control" id="button-nextWeek" onclick="nextWeek();">v.<span class="nextWeek number"></span>&nbsp;▶</h1>
+			<h1 class="header control" id="button-nextWeek" onclick="nextWeek();">v.<span class="nextWeek number"></span>&nbsp;<i class="fas fa-caret-right"></i></h1>
 		</nav>
 
 		<div class="foodContainer">
