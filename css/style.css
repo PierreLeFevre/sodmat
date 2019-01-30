@@ -134,6 +134,10 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 	font-size: 1rem;
 }
 
+.day-feedback a{
+	color: inherit;
+}
+
 .course{
 	line-height: 1.25rem;
 	font-size: 1rem;	
@@ -146,6 +150,11 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
 
 .course-vego, .course-extra{
 	color: #555;
+}
+
+.day-feedback .course-extra{
+	color: white !important;
+	opacity: 1 !important;
 }
 
 .today{
