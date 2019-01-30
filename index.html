@@ -41,19 +41,18 @@
 	<meta name="msapplication-TileColor" content="#30673c">
 	<meta name="theme-color" content="#30673c">
 
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100,300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/spinner.css">
 </head>
 <body>
 
 	<div class="wrapper">
 
 		<nav class="navbar">
-			<h1 class="header">Södertörn</h1>
-			<h1 class="header control" onclick="lastWeek();">&lt;v.<span class="lastWeek"></span></h1>
-			<h1 class="header">Meny v.<span class="selectedWeek"></span></h1>
-			<h1 class="header control" onclick="nextWeek();">v.<span class="nextWeek"></span>&gt;</h1>
+			<h1 class="header control" id="button-lastWeek" onclick="lastWeek();">◀&nbsp;v.<span class="lastWeek number"></span></h1>
+			<h1 class="header" id="label-currentWeek">Meny v.<span class="selectedWeek number"></span></h1>
+			<h1 class="header control" id="button-nextWeek" onclick="nextWeek();">v.<span class="nextWeek number"></span>&nbsp;▶</h1>
 		</nav>
 
 		<div class="foodContainer">

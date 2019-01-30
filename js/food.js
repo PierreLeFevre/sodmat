@@ -76,9 +76,8 @@ var food = {
 		},
 
 		5: {
-			normal: "Tacofredag! Nachos serveras med nachos, ris & salsa",
-			vego: "Tacofredag! Nachos serveras med nachos, ris & salsa",
-			extra: "Tacofredag! Nachos serveras med nachos, ris & salsa"
+			normal: "Tacofredag! Nachos serveras med tortillachips, ris & salsa",
+			vego: "Tacofredag! Vegoachos serveras med tortillachips, ris & salsa"
 		}
 	},
 	6: {
