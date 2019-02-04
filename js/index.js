@@ -126,8 +126,9 @@ function updateFood(){
 			}
 		};
 		
-		$(".foodScroller").append('<div class="today day day-feedback"><h1 class="day-header">Tyck till!</h1></div>');
-		$(".day-feedback").append('<p class="course course-extra">Vi behöver din feedback!<br>För att göra sidan bättre tar vi gärna in buggrapporter, tips och tankar från användare. <br><br><a href="http://sodproject.ga/#contact">Klicka här för att förbättra SodMat!</a></p>');
+		//Feedback Dialog
+		//$(".foodScroller").append('<div class="today day day-feedback"><h1 class="day-header">Tyck till!</h1></div>');
+		//$(".day-feedback").append('<p class="course course-extra">Vi behöver din feedback!<br>För att göra sidan bättre tar vi gärna in buggrapporter, tips och tankar från användare. <br><br><a href="http://sodproject.ga/#contact">Klicka här för att förbättra SodMat!</a></p>');
 		
 		resizeTimetable();
 	}
