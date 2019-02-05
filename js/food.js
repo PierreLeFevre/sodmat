@@ -114,23 +114,24 @@ var food = {
 		},
 
 		2: {
-			normal: "Kycklingrisotto serveras med vitlöksdressing",
-			vego: "Grönsaksrisotto med quinoa & svamp serveras med vitlöksdressing"
+			normal: "Sprödbakad fisk med remouladsås & potatis",
+			vego: "Caribean burgare med remouladsås & potatis"
 		},
 
 		3: {
-			normal: "Mammas spaghetti med köttfärssås & bästa KRAV-Ketchupen <3",
-			vego: "Mammas spaghetti med fake köttfärssås & bästa KRAV-Ketchupen <3"
+			normal: "Korv Stroganoff serveras med ris",
+			vego: "Vegetarisk Stroganoff serveras med ris"
 		},
 
 		4: {
-			normal: "Biffsauté med grönsaker serveras med ris",
-			vego: "Dhal, indisk linsgryta serveras med ris"
+			normal: "Grönsakssoppa Mexicana serveras med mjukt bröd & pålägg",
+			vego: "Grönsakssoppa Mexicana serveras med mjukt bröd & pålägg"
 		},
 
 		5: {
-			normal: "Oxjärpar med gräddsås, potatis & inlagd gurka",
-			vego: "Falafel med smakrik tomatsås & potatis"
+			normal: "Pulled Pork med nachos, ris/bulgur & BBQ-sås",
+			vego: "Pulled Vego med nachos, ris/bulgur & BBQ-sås",
+			extra: "Pulled Chicken med nachos, ris/bulgur & BBQ-sås"
 		}
 	}
 };
