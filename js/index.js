@@ -86,21 +86,16 @@ function updateFood(){
 
 			var boj = "";
 
-			switch(Number(changingDate.getDate().toString().substr(-1))){
-				case 0:
-				case 3:
-				case 4:
-				case 5:
-				case 6:
-				case 7:
-				case 8:
-				case 9:
-					boj = "e";
-					break;	
+			switch(changingDate.getDate()){
 				case 1:
 				case 2:
+				case 21:
+				case 22:
+				case 31:
 					boj = "a";
 					break;
+				default:
+					boj = "e";
 			}
 
 			var displayDate = " den " + changingDate.getDate() + ":" + boj + " " + months[changingDate.getMonth()] + " " + changingDate.getFullYear();
