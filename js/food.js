@@ -133,5 +133,32 @@ var food = {
 			vego: "Pulled Vego med nachos, ris/bulgur & BBQ-sås",
 			extra: "Pulled Chicken med nachos, ris/bulgur & BBQ-sås"
 		}
+	},
+	8: {
+		1: {
+			normal: "Chili con carne med ris & gräddfilsklick",
+			vego: "Chili sin carne med ris & gräddfilsklick"
+		},
+
+		2: {
+			normal: "Pasta Carbonara med bacon & svartpeppar",
+			vego: "Pasta med vegetarisk Carbonara",
+			extra: "Kalkoncarbonara med bacon & svartpeppar"
+		},
+
+		3: {
+			normal: "Kalkonschnitzel Cordon Bleu med klyftpotatis & skysås",
+			vego: "Vegetarisk schnitzel med klyftpotatis & dijoncremé"
+		},
+
+		4: {
+			normal: "Kebabgryta serveras med ris",
+			vego: "Kebabkryddade grönsaker serveras med ris"
+		},
+
+		5: {
+			normal: "Pannbiff med bearnaisesås & potatis",
+			vego: "Vegobiff med bearnaisesås & potatis"
+		}
 	}
 };
