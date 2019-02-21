@@ -160,5 +160,58 @@ var food = {
 			normal: "Pannbiff med bearnaisesås & potatis",
 			vego: "Vegobiff med bearnaisesås & potatis"
 		}
+	},
+	9: {
+		1: {
+			normal: "Sportlov",
+			vego: "Sportlov"
+		},
+
+		2: {
+			normal: "Sportlov",
+			vego: "Sportlov"
+		},
+
+		3: {
+			normal: "Sportlov",
+			vego: "Sportlov"
+		},
+
+		4: {
+			normal: "Sportlov",
+			vego: "Sportlov"
+		},
+
+		5: {
+			normal: "Sportlov",
+			vego: "Sportlov"
+		}
+	},
+	10: {
+		1: {
+			normal: "Köttbullar serveras med tomatsås & pasta",
+			vego: "Morotsbullar serveras med tomatsås & pasta"
+		},
+
+		2: {
+			normal: "Sprödbakad fisk med tartarsås & potatis",
+			vego: "Rödbetsbiffar med tartarsås & potatis"
+		},
+
+		3: {
+			normal: "Kycklingwok serveras med ris",
+			vego: "Grönsakswok serveras med ris"
+		},
+
+		4: {
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
+		},
+
+		5: {
+			normal: "Helstekt fläskytterfilé med bearnaisesås & klyftpotatis",
+			vego: "Vegetarisk Pad Thai med tofu",
+			extra: "Pannbiff"
+		}
 	}
 };
