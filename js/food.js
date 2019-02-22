@@ -164,27 +164,7 @@ var food = {
 	9: {
 		1: {
 			normal: "Sportlov",
-			vego: "Sportlov"
-		},
-
-		2: {
-			normal: "Sportlov",
-			vego: "Sportlov"
-		},
-
-		3: {
-			normal: "Sportlov",
-			vego: "Sportlov"
-		},
-
-		4: {
-			normal: "Sportlov",
-			vego: "Sportlov"
-		},
-
-		5: {
-			normal: "Sportlov",
-			vego: "Sportlov"
+			vego: "Ha ett bra sportlov!"
 		}
 	},
 	10: {
