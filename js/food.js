@@ -217,7 +217,8 @@ var food = {
 		},
 
 		5: {
-			normal: "Tacofredag! Nachochips, köttfärs, ris & salsa"
+			normal: "Tacofredag! Nachochips, köttfärs, ris & salsa",
+			vego: "Tacofredag! Nachochips, ris & salsa"
 		}
 	}
 };
