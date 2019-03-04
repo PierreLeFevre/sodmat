@@ -193,5 +193,31 @@ var food = {
 			vego: "Vegetarisk Pad Thai med tofu",
 			extra: "Pannbiff"
 		}
+	},
+	11: {
+		1: {
+			normal: "Kycklingschnitzel med mild currycremé & ris",
+			vego: "Kikärstbiff med mild currycremé & ris"
+		},
+
+		2: {
+			normal: "Pasta med skink & ostsås",
+			vego: "Pasta med ratatouille",
+			extra: "Pasta med kalkonsås & ostsås"
+		},
+
+		3: {
+			normal: "Ugnsstekt falukorv med potatismos & KRAV-ketchup",
+			vego: "Ugnsstekt sojakorv med potatismos & KRAV-ketchup"
+		},
+
+		4: {
+			normal: "Nudelsoppa med kyckling serveras med bröd & pålägg",
+			vego: "Nudelsoppa med grönsaker serveras med bröd & pålägg"
+		},
+
+		5: {
+			normal: "Tacofredag! Nachochips, köttfärs, ris & salsa"
+		}
 	}
 };
