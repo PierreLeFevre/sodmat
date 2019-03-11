@@ -220,5 +220,31 @@ var food = {
 			normal: "Tacofredag! Nachochips, köttfärs, ris & salsa",
 			vego: "Tacofredag! Nachochips, ris & salsa"
 		}
+	},
+	12: {
+		1: {
+			normal: "Farmarbiff med potatismos & lingonsylt",
+			vego: "Grönkålsbiff med potatismos & lingonsylt"
+		},
+
+		2: {
+			normal: "Tandoorikryddad kyckling & grönsaker serveras med ris & yoghurtsås",
+			vego: "Tandoori kryddad tofu & grönsaker serveras med ris & yoghurtsås"
+		},
+
+		3: {
+			normal: "Panerad fisk med kall dillsås & potatis",
+			vego: "Stekt quorn med kall dillsås & potatis"
+		},
+
+		4: {
+			normal: "Spagetti med köttfärssås & KRAV-ketchup",
+			vego: "Spagetti med sojafärssås & KRAV-ketchup"
+		},
+
+		5: {
+			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
+			vego: "Green burger med bröd, sallad, dressing & klyftpotatis"
+		}
 	}
 };
