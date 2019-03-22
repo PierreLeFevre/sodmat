@@ -16,8 +16,8 @@ var food = {
 		},
 
 		4: {
-			normal: "🅱️agetti med 🅱️öttfärssås & bästa KRAV-ketchupen",
-			vego: "Mjuk lång pasta med pressad bönextraktsås & KRAV-tomatvätska i burkformat"
+			normal: "Mammas spaghetti med köttfärssås bästa KRAV-ketchupen",
+			vego: "Mammas spaghetti med sojafärssås bästa KRAV-ketchupen"
 		},
 
 		5: {
