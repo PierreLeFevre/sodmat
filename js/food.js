@@ -52,6 +52,7 @@ var food = {
 			normal: "Kycklingwok med ris",
 			vego: "Grönsakswok med ris"
 		},
+	},
 	15: {
 		1: {
 			normal: "Kycklingköttbullar med tomatsås & pasta",
