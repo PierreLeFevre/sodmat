@@ -51,6 +51,32 @@ var food = {
 		5: {
 			normal: "Kycklingwok med ris",
 			vego: "Grönsakswok med ris"
+		},
+	15: {
+		1: {
+			normal: "Kycklingköttbullar med tomatsås & pasta",
+			vego: "Morotsbullar med tomatsås & pasta"
+		},
+
+		2: {
+			normal: "Sprödbakad fisk med kall örtsås & potatis",
+			vego: "Rödbetsbiffar med kall örtsås & potatis"
+		},
+
+		3: {
+			normal: "Spagetti med köttfärssås & KRAV-ketchup",
+			vego: "Spagetti med sojafärssås & KRAV-ketchup"
+		},
+
+		4: {
+			normal: "Helstekt fläskytterfilé med bearnaisesås & klyftpotatis",
+			vego: "Vegetarisk Pad Thai med tofu",
+			extra: "Kyckling med bearnaisesås & klyftpotatis",
+		},
+
+		5: {
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
 		}
 	}
 };
