@@ -54,7 +54,7 @@ var food = {
 	},
 	17: {
 		1:{
-			normal: "Annandag påsk - Ingen skola"
+			normal: "Annandag påsk - Ingen skola",
 			vego: "Annandag påsk - Ingen skola"
 		},
 		2: {
@@ -74,8 +74,8 @@ var food = {
 
 		5: {
 			normal: "Pasta med skink & ostsås",
-			vego: "Pasta med kalkonsås & ostsås"
-			extra: "Pasta med skink & ostsås",
+			vego: "Pasta med kalkonsås & ostsås",
+			extra: "Pasta med skink & ostsås"
 		}
 	},
 	18: {
