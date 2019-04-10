@@ -51,5 +51,57 @@ var food = {
 			normal: "Det är fredag mina kamrater",
 			vego: "Haha aa deere"
 		}
+	},
+	17: {
+		1:{
+			normal: "Annandag påsk - Ingen skola"
+			vego: "Annandag påsk - Ingen skola"
+		},
+		2: {
+			normal: "Ugnsstekt falukorv med makaroner & KRAV-ketchup",
+			vego: "Ugnsstekt sojakorv med makaroner & KRAV-ketchup"
+		},
+
+		3: {
+			normal: "Chicky schnitzel med mild currycremé & ris",
+			vego: "Kikärstbiff med mild currycremé & ris"
+		},
+
+		4: {
+			normal: "Nachos serveras med chips, ris & salsa",
+			vego: "Nachos serveras med chips, ris & salsa."
+		},
+
+		5: {
+			normal: "Pasta med skink & ostsås",
+			vego: "Pasta med kalkonsås & ostsås"
+			extra: "Pasta med skink & ostsås",
+		}
+	},
+	18: {
+		1: {
+			normal: "Farmarbiff med pepparsås & potatis",
+			vego: "Grönsaksbiff med pepparsås & potatis"
+		},
+
+		2: {
+			normal: "Tandoorikryddad kyckling & grönsaker serveras med ris & yoghurtsås",
+			vego: "Tandoori kryddad tofu & grönsaker serveras med ris & yoghurtsås"
+		},
+
+		3: {
+			normal: "Valborg - Första maj",
+			vego: "Valborg - Första maj"
+		},
+
+		4: {
+			normal: "Korv Stroganoff serveras med pasta",
+			vego: "Vegetarisk Stroganoff serveras med pasta"
+		},
+
+		5: {
+			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
+			vego: "Green Burger med bröd, sallad, dressing & klyftpotatis"
+		}
 	}
 };
