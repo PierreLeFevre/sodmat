@@ -50,5 +50,31 @@ var food = {
 			normal: "Mammas spaghetti med köttfärsröra och bästa KRAV-ketchupen i världen",
 			vego: "Mammas spaghetti med fake-köttfärsröra och bästa KRAV-ketchupen i världen"
 		}
+	},
+	20: {
+		1: {
+			normal: "Kycklingschnitzel med klyftpotatis & skysås",
+			vego: "Vegetarisk schnitzel med klyftpotatis & skysås"
+		},
+
+		2: {
+			normal: "Nötfärsgryta med majs & champinjoner serveras med ris",
+			vego: "Grönsaksgryta med mango, lime & blomkål samt ris"
+		},
+
+		3: {
+			normal: "Stekt falukorv serveras med potatismos & KRAV-ketchup",
+			vego: "Stekt sojakorv serveras med potatismos & KRAV-ketchup"
+		},
+
+		4: {
+			normal: "Pepparbiff med tzatziki & klyftpotatis",
+			vego: "Morotsbiff med tzatziki & klyftpotatis"
+		},
+
+		5: {
+			normal: "Pulled Pork med bröd, rökig barbecuesås samt ris",
+			vego: "Pulled Vego med bröd, rökig barbecuesås samt ris"
+		}
 	}
 };
