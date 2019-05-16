@@ -51,5 +51,31 @@ var food = {
 			vego: "Vegetarisk Pad Thai med tofu",
 			extra: "Pannbiff"
 		}
+	},
+	22: {
+		1: {
+			normal: "Kyckling med currysås serveras med ris",
+			vego: "Quorn med currysås serveras med ris"
+		},
+
+		2: {
+			normal: "Tacolillfredag serveras med chips, köttfärssås, salsa och ris",
+			vego: "Tacolillfredag serveras med chips, köttfärssås, salsa och ris"
+		},
+
+		3: {
+			normal: "Pasta penne med kalkon, basilika & grädde",
+			vego: "Pasta penne med ratatouille"
+		},
+
+		4: {
+			normal: "Ingen mat (Kristi himmelfärd)",
+			vego: "Ingen mat (Kristi himmelfärd)"
+		},
+
+		5: {
+			normal: "Ingen mat (Klämdag)",
+			vego: "Ingen mat (Klämdag)"
+		}
 	}
 };
