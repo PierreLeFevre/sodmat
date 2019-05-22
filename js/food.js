@@ -1,30 +1,4 @@
 var food = {
-	20: {
-		1: {
-			normal: "Kycklingschnitzel med klyftpotatis & skysås",
-			vego: "Vegetarisk schnitzel med klyftpotatis & skysås"
-		},
-
-		2: {
-			normal: "Nötfärsgryta med majs & champinjoner serveras med ris",
-			vego: "Grönsaksgryta med mango, lime & blomkål samt ris"
-		},
-
-		3: {
-			normal: "Stekt falukorv serveras med potatismos & KRAV-ketchup",
-			vego: "Stekt sojakorv serveras med potatismos & KRAV-ketchup"
-		},
-
-		4: {
-			normal: "Pepparbiff med tzatziki & klyftpotatis",
-			vego: "Morotsbiff med tzatziki & klyftpotatis"
-		},
-
-		5: {
-			normal: "Pulled Pork med bröd, rökig barbecuesås samt ris",
-			vego: "Pulled Vego med bröd, rökig barbecuesås samt ris"
-		}
-	},
 	21: {
 		1: {
 			normal: "Kebabgryta serveras med ris",
@@ -76,6 +50,33 @@ var food = {
 		5: {
 			normal: "Ingen mat (Klämdag)",
 			vego: "Ingen mat (Klämdag)"
+		}
+	},
+	23: {
+		1: {
+			normal: "Falukorv med makaroner & KRAV-ketchup",
+			vego: "Sojakorv med makaroner & KRAV-ketchup"
+		},
+
+		2: {
+			normal: "Fiskburgare med kall örtsås & potatis",
+			vego: "Grönsaksbiff med kall örtsås & potatis"
+		},
+
+		3: {
+			normal: "Kycklingrisotto med vitlöksdressing",
+			vego: "Grönsaksrisotto med tofu & vitlöksdressing",
+			extra: "Studenten (3:or)"
+		},
+
+		4: {
+			normal: "Ingen mat (Nationaldagen)",
+			vego: "Ingen mat (Nationaldagen"
+		},
+
+		5: {
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
 		}
 	}
 };
