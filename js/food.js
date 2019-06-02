@@ -78,5 +78,16 @@ var food = {
 			normal: "Kebab med pitabröd & tillbehör",
 			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
 		}
+	},
+	24: {
+		1: {
+			normal: "Fläskschnitzel med skysås & potatis",
+			vego: "Grönsaksbiff med skysås & potatis"
+		},
+
+		2: {
+			normal: "Kyckling Korma serveras med ris",
+			vego: "Vegetarisk Korma serveras med ris"
+		}
 	}
 };
