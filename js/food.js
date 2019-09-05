@@ -1,8 +1,35 @@
 var food = {
+	36: {
+		1: {
+			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
+			vego: "Green burger med bröd, sallad, dressing & klyftpotatis"
+		},
+
+		2: {
+			normal: "Laxsauté med rotfrukter med tofu & kokt potatis",
+			vego: "Fratinerade rotfrukter med tofu & kokt potatis"
+		},
+
+		3: {
+			normal: "Pasta med kyckling & soltorkade tomater",
+			vego: "Pasta med rataouille"
+		},
+
+		4: {
+			normal: "Tomatsoppa med mjukt bröd & pålägg",
+			vego: "Tomatsoppa med mjukt bröd & pålägg"
+		},
+
+		5: {
+			normal: "Taco på nötfärs serveras med nachos, ris & salsa",
+			vego: "Taco på sojafärs serveras med nachos, ris & salsa"
+		}
+	},
 	37: {
 		1: {
-			normal: "Pasta med skink & ostsås/FF Kalkon & ostsås",
-			vego: "Pasta med lins & broccolisåss"
+			normal: "Pasta med skink & ostsås",
+			vego: "Pasta med lins & broccolisåss",
+			extra: "Pasta med Kalkon & ostsås"
 		},
 
 		2: {
