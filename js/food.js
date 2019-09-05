@@ -1,93 +1,93 @@
 var food = {
-	21: {
+	37: {
 		1: {
-			normal: "Kebabgryta serveras med ris",
-			vego: "Dhal (indisk linsgryta) serveras med ris"
+			normal: "Pasta med skink & ostsås/FF Kalkon & ostsås",
+			vego: "Pasta med lins & broccolisåss"
 		},
 
 		2: {
-			normal: "Sprödbakad fisk med tartarsås & potatis",
-			vego: "Rödbetsbiffar med tartarsås & potatis"
+			normal: "Panerad torsk med kall dillsås & potatis",
+			vego: "Vegetarisk biff med kall dillsås & potatis"
 		},
 
 		3: {
 			normal: "Kycklingwok med ris",
-			vego: "Grönsakswok med ris"
+			vego: "Grönsakswok med ris"
 		},
 
 		4: {
-			normal: "Köttbullar med kryddig tomatsås serveras med pasta",
-			vego: "Morotsbullar med kryddig tomatsås serveras med pasta"
+			normal: "Pannbiff med ajvarkräm & klyftpotatis",
+			vego: "Stekt quorn med ajvarkräm & klyftpotatis"
 		},
 
 		5: {
-			normal: "Helstekt fläskytterfilé med bearnaisesås & klyftpotatis",
-			vego: "Vegetarisk Pad Thai med tofu",
-			extra: "Pannbiff"
+			normal: "Chili con carne serveras med ris",
+			vego: "Chili sin carne serveras med ris"
+			
 		}
 	},
-	22: {
+	38: {
 		1: {
-			normal: "Kyckling med currysås serveras med ris",
-			vego: "Quorn med currysås serveras med ris"
+			normal: " ",
+			vego: " "
 		},
 
 		2: {
-			normal: "Tacolillfredag serveras med chips, köttfärssås, salsa och ris",
-			vego: "Tacolillfredag serveras med chips, köttfärssås, salsa och ris"
+			normal: " ",
+			vego: " "
 		},
 
 		3: {
-			normal: "Pasta penne med kalkon, basilika & grädde",
-			vego: "Pasta penne med ratatouille"
+			normal: " ",
+			vego: " "
 		},
 
 		4: {
-			normal: "Ingen mat (Kristi himmelfärd)",
-			vego: "Ingen mat (Kristi himmelfärd)"
+			normal: " ",
+			vego: " "
 		},
 
 		5: {
-			normal: "Ingen mat (Klämdag)",
-			vego: "Ingen mat (Klämdag)"
+			normal: " ",
+			vego: " "
 		}
 	},
-	23: {
+	39: {
 		1: {
-			normal: "Falukorv med makaroner & KRAV-ketchup",
-			vego: "Sojakorv med makaroner & KRAV-ketchup"
+			normal: " ",
+			vego: " "
 		},
 
 		2: {
-			normal: "Fiskburgare med kall örtsås & potatis",
-			vego: "Grönsaksbiff med kall örtsås & potatis"
+			normal: " ",
+			vego: " "
 		},
 
 		3: {
-			normal: "Kycklingrisotto med vitlöksdressing",
-			vego: "Grönsaksrisotto med tofu & vitlöksdressing",
-			extra: "Studenten (3:or)"
+			normal: " ",
+			vego: " ",
+			extra: " "
 		},
 
 		4: {
-			normal: "Ingen mat (Nationaldagen)",
-			vego: "Ingen mat (Nationaldagen"
+			normal: " ",
+			vego: " "
 		},
 
 		5: {
-			normal: "Kebab med pitabröd & tillbehör",
-			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
+			normal: " ",
+			vego: " "
 		}
 	},
-	24: {
+	40: {
 		1: {
-			normal: "Fläskschnitzel med skysås & potatis",
-			vego: "Grönsaksbiff med skysås & potatis"
+			normal: " ",
+			vego: " "
 		},
 
 		2: {
-			normal: "Kyckling Korma serveras med ris",
-			vego: "Vegetarisk Korma serveras med ris"
+			normal: " ",
+			vego: " "
 		}
 	}
 };
