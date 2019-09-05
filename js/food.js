@@ -106,15 +106,5 @@ var food = {
 			vego: " "
 		}
 	},
-	40: {
-		1: {
-			normal: " ",
-			vego: " "
-		},
 
-		2: {
-			normal: " ",
-			vego: " "
-		}
-	}
 };
