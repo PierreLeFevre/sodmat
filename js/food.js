@@ -1,30 +1,5 @@
 var food = {
-	36: {
-		1: {
-			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
-			vego: "Green burger med bröd, sallad, dressing & klyftpotatis"
-		},
 
-		2: {
-			normal: "Laxsauté med rotfrukter med tofu & kokt potatis",
-			vego: "Fratinerade rotfrukter med tofu & kokt potatis"
-		},
-
-		3: {
-			normal: "Pasta med kyckling & soltorkade tomater",
-			vego: "Pasta med rataouille"
-		},
-
-		4: {
-			normal: "Tomatsoppa med mjukt bröd & pålägg",
-			vego: "Tomatsoppa med mjukt bröd & pålägg"
-		},
-
-		5: {
-			normal: "Taco på nötfärs serveras med nachos, ris & salsa",
-			vego: "Taco på sojafärs serveras med nachos, ris & salsa"
-		}
-	},
 	37: {
 		1: {
 			normal: "Pasta med skink & ostsås",
@@ -55,28 +30,28 @@ var food = {
 	},
 	38: {
 		1: {
-			normal: " ",
-			vego: " "
+			normal: "Köttbullar med makaroner & KRAV-ketchup",
+			vego: "Falafel med makaroner & KRAV-ketchup"
 		},
 
 		2: {
-			normal: " ",
-			vego: " "
+			normal: "Korv Stroganoff serveras med ri",
+			vego: "Vegetarisk Stroganoff serveras med ris"
 		},
 
 		3: {
-			normal: " ",
-			vego: " "
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Kebabkryddad Pulled Vego med bröd & tillbehör"
 		},
 
 		4: {
-			normal: " ",
-			vego: " "
+			normal: "Spagetti Bolognese",
+			vego: "Spagetti med vegetarisk Bolognese"
 		},
 
 		5: {
-			normal: " ",
-			vego: " "
+			normal: "Kyckling i curry serveras med ris",
+			vego: "Dhal, indisk linsgryta serveras med ris"
 		}
 	},
 	39: {
