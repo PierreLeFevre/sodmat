@@ -23,8 +23,9 @@ var food = {
 		},
 
 		5: {
-			normal: "Chili con carne serveras med ris",
-			vego: "Chili sin carne serveras med ris"
+			normal: "Chili cos carne serveras med ris",
+			vego: "Chili sin carne serveras med ris",
+			extra: "Chili tan carne serveras med ris"
 			
 		}
 	},
