@@ -28,32 +28,61 @@ var food = {
 	},
 	39: {
 		1: {
-			normal: " ",
-			vego: " "
+			normal: "Oxpytt serveras med KRAV-rödbetor",
+			vego: "Veggiepytt serveras med vitlöksdressing"
 		},
 
 		2: {
-			normal: " ",
-			vego: " "
+			normal: "Pasta Carbonara",
+			vego: "Pasta med ratatouille",
+			extra: "Kalkon Carbonara" 
 		},
 
 		3: {
-			normal: " ",
-			vego: " ",
-			extra: " "
+			normal: "Kebabgryta serveras med ris",
+			vego: "Kebabkryddade sojastrimlor & grönsaker med ris"
+			
 		},
 
 		4: {
-			normal: " ",
-			vego: " "
+			normal: "Torskburgare med potatismos & gurkmajonnäs",
+			vego: "Vegetarisk Pad Thai med tofu"
 		},
 
 		5: {
-			normal: " ",
-			vego: " "
+			normal: "Chicken nuggets serveras med sweet chili & ris",
+			vego: "Vegetarisk schnitzel serveras med sweet chili & ris"
 		}
 	},
 	40: {
+		1: {
+			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
+			vego: "Green Burger med bröd, sallad, dressing & klyftpotatis"
+		},
+
+		2: {
+			normal: "Ugnsstekt falukörv med potatismos & KRAV-ketchup",
+			vego: "Ugnsstekt sojakorv med potatismos & KRAV-ketchup"
+		},
+
+		3: {
+			normal: "Pepparbiff med bearnaisesås & klyftpotatis",
+			vego: "Caribean biff med bearnaisesås & klyftpotatis"
+			
+		},
+
+		4: {
+			normal: "Pulled Chicken med bröd, rökig BBQ-sås & ris",
+			vego: "Pulled Vego med bröd, rökig BBQ-sås & ris"
+		},
+
+		5: {
+			normal: "Kycklingköttbullar med pasta & tomatsås",
+			vego: "Falafel med pasta & tomatsås"
+		}
+	},
+	
+	41: {
 		1: {
 			normal: " ",
 			vego: " "
