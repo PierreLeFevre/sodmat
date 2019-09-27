@@ -1,31 +1,5 @@
 var food = {
 
-	38: {
-		1: {
-			normal: "Köttbullar med makaroner & KRAV-ketchup",
-			vego: "Falafel med makaroner & KRAV-ketchup"
-		},
-
-		2: {
-			normal: "Korv Stroganoff serveras med ris",
-			vego: "Vegetarisk Stroganoff serveras med ris"
-		},
-
-		3: {
-			normal: "Kebab med pitabröd & tillbehör",
-			vego: "Kebabkryddad Pulled Vego med bröd & tillbehör"
-		},
-
-		4: {
-			normal: "Spagetti Bolognese",
-			vego: "Spagetti med vegetarisk Bolognese"
-		},
-
-		5: {
-			normal: "Kyckling i curry serveras med ris",
-			vego: "Dhal, indisk linsgryta serveras med ris"
-		}
-	},
 	39: {
 		1: {
 			normal: "Oxpytt serveras med KRAV-rödbetor",
@@ -54,6 +28,7 @@ var food = {
 			vego: "Vegetarisk schnitzel serveras med sweet chili & ris"
 		}
 	},
+	
 	40: {
 		1: {
 			normal: "Hamburgare med bröd, sallad, dressing & klyftpotatis",
@@ -84,7 +59,61 @@ var food = {
 	
 	41: {
 		1: {
-			normal: " ",
+			normal: "Tacobiff serveras med chipotlekräm & ris",
+			vego: "Provensalsk gryta med edemame bönor & ratatouille serveras med ris"
+		},
+
+		2: {
+			normal: "Panerad fisk med kall örtsås och potatis",
+			vego: "Vegobiff med kall örtsås och potatis"
+		},
+
+		3: {
+			normal: "Thaigryta med kyckling, kokos, chili och ingefära serveras med ris",
+			vego: "Thaigryta med grönsaker, kokos, chili och ingefära serveras med ris"
+			
+		},
+
+		4: {
+			normal: "Spagetti med köttfärssås",
+			vego: "Spagetti med sojafärssås"
+		},
+
+		5: {
+			normal: "Kycklingschnitzel serveras med dragonkräm & ris",
+			vego: "Broccoligratäng toppad med tofu"
+		}
+	},
+	42: {
+		1: {
+			normal: "Oxjärpar med gräddsås, potatis & lingon",
+			vego: "Morotsbullar med gräddsås, potatis & lingon"
+		},
+
+		2: {
+			normal: "Pasta med kyckling & currysås",
+			vego: "Pasta med quorn & currysås"
+		},
+
+		3: {
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Kebabkryddade sojastrimlor med pitabröd & tillbehör"
+			
+		},
+
+		4: {
+			normal: "Nudelsoppa med kyckling serveras med bröd & pålägg",
+			vego: "Nudelsoppa med grönsaker serveras med bröd & pålägg"
+		},
+
+		5: {
+			normal: "Taco på nötfärs serveras med nachos, ris & salsa",
+			vego: "Taco på sojafärs serveras med nachos, ris & salsa"
+		}
+	},
+	43: {
+		1: {
+			normal: "Mat, tror jag",
 			vego: " "
 		},
 
