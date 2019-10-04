@@ -102,6 +102,7 @@ function updateFood(){
 
 
 			if ((i == today.getDay()) && (weekModifier == 0)) {
+				$("title").text(food[(modifiedWeek)][i].normal + " | Sodmat")
 				$(".foodScroller").append('<div class="today day day-' + i + '"><h1 class="day-header">' + days[i-1] + "<span class='day-date'>&nbsp;" + displayDate + "</span>" + '</h1></div>');
 			}else{
 				$(".foodScroller").append('<div class="day day-' + i + '"><h1 class="day-header">' + days[i-1] +  "<span class='day-date'>&nbsp;" + displayDate + "</span>" + '</h1></div>');
