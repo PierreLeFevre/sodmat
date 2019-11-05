@@ -1,32 +1,5 @@
 var food = {
 
-	43: {
-		1: {
-			normal: "Sprödbakad torsk med kall dillsås & potati",
-			vego: "Vegetarisk biff med kall dillsås & potatis"
-		},
-
-		2: {
-			normal: "Korv Stroganoff serveras med ris",
-			vego: "Vegetarisk Stroganoff serveras med ris"
-		},
-
-		3: {
-			normal: "Köttbullar med potatismos & lingonsylt",
-			vego: "Falafel med myntasås, hummus & pitabröd",
-			
-		},
-
-		4: {
-			normal: "Chili con Pollo serveras med ris & riven ost",
-			vego: "Chili con veggie serveras med ris & riven ost"
-		},
-
-		5: {
-			normal: "Pasta med skink & ostsås/FF Kalkonsås",
-			vego: "Soja- & limemarinerad tofu med nudelwok & dressing"
-		}
-	},
 	
 	
 	45: {
@@ -59,6 +32,64 @@ var food = {
 	
 	
 	46: {
+		1: {
+			normal: "Oxpytt serveras med rödbetor",
+			vego: "Veggiepytt serveras med vitlöksdressing"
+		},
+
+		2: {
+			normal: "Chili con carne med ris",
+			vego: "Chili sin carne "
+		},
+
+		3: {
+			normal: "Kycklingschnitzel serveras med kall dragonsås & klyftpotatis",
+			vego: "Morotsbiffar"
+			
+		},
+
+		4: {
+			normal: "Pasta Carbonara",
+			vego: "Provensalsk gryta med edemame bönor & ratatouille",
+			extra: "Kalkon Carbonara"
+		},
+
+		5: {
+			normal: "Kebabgryta serveras med ris",
+			vego: "Sojafärslasagne"
+		}
+	},
+	
+		
+	47: {
+		1: {
+			normal: "Kycklingköttbullar med pasta & tomatsås",
+			vego: "Linsgryta med rostad blomkål"
+		},
+
+		2: {
+			normal: "Ugnsstekt falukorv med potatismos",
+			vego: "Ugnsstekt sojakorv"
+		},
+
+		3: {
+			normal: "Sprödbakad fisk med kall dillsås & kokt potatis",
+			vego: "Stekt quorn"
+		},
+
+		4: {
+			normal: "Pulled Chicken med rökig BBQ-sås serveras med ris",
+			vego: "Pulled Vego"
+		},
+
+		5: {
+			normal: "Pannbiff med bearnaisesås & klyftpotatis",
+			vego: "Caribean biff med bearnaisesås"
+		}
+	},
+	
+		
+	48: {
 		1: {
 			normal: "",
 			vego: " "
