@@ -1,36 +1,5 @@
 var food = {
 
-	
-	
-	45: {
-		1: {
-			normal: "Torskburgare med remouladsås & kokt potatis",
-			vego: "Vegetarisk schnitzel med remouladsås & kokt potatis"
-		},
-
-		2: {
-			normal: "Kebabrisotto med vitlöksdressing",
-			vego: "Grönsaksrisotto med linser & bönor serveras med vitlöksdressing"
-		},
-
-		3: {
-			normal: "Asiatisk kyckling i sötsur sås serveras med ris",
-			vego: "Moussaka (sojafärs, spenat, potatis, zucchini & fetaost)"
-			
-		},
-
-		4: {
-			normal: "Hamburgare med bröd, dressing, sallad & klyftpotatis",
-			vego: "Green burger med bröd, dressing, sallad & klyftpotatis"
-		},
-
-		5: {
-			normal: "Spagetti Bolognese",
-			vego: "Spagetti med vegetarisk Bolognese"
-		}
-	},
-	
-	
 	46: {
 		1: {
 			normal: "Oxpytt serveras med rödbetor",
@@ -92,28 +61,28 @@ var food = {
 	48: {
 		1: {
 			normal: "",
-			vego: " "
+			vego: ""
 		},
 
 		2: {
-			normal: " ",
-			vego: " "
+			normal: "",
+			vego: ""
 		},
 
 		3: {
-			normal: " ",
-			vego: " ",
-			extra: " "
+			normal: "",
+			vego: "",
+			extra: ""
 		},
 
 		4: {
-			normal: " ",
-			vego: " "
+			normal: "",
+			vego: ""
 		},
 
 		5: {
-			normal: " ",
-			vego: " "
+			normal: "",
+			vego: ""
 		}
 	},
 
