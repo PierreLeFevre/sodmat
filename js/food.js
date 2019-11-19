@@ -67,7 +67,7 @@ var food = {
 		2: {
 			normal: "Fläskschnitzel med örtkräm & potatis",
 			vego: "Vegetarisk schnitzel",
-			extra: "Chicken nuggets"
+			extra: "Chimken numgits"
 		},
 
 		3: {
