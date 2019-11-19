@@ -60,6 +60,61 @@ var food = {
 		
 	48: {
 		1: {
+			normal: "Thaigryta med kyckling, kokos & chili serveras med ris",
+			vego: "Thaigryta med grönsaker"
+		},
+
+		2: {
+			normal: "Fläskschnitzel med örtkräm & potatis",
+			vego: "Vegetarisk schnitzel",
+			extra: "Chicken nuggets"
+		},
+
+		3: {
+			normal: "Korv Stroganoff med ris",
+			vego: "Vegetarisk Stroganoff med ris"
+		},
+
+		4: {
+			normal: "Spagetti med köttfärssås",
+			vego: "Spagetti med sojafärssås"
+		},
+
+		5: {
+			normal: "Kebab med pitabröd & tillbehör",
+			vego: "Falafel"
+		}
+	},
+	
+	49: {
+		1: {
+			normal: "Köttbullar med gräddsås, potatis & lingon",
+			vego: "Morotsbullar"
+		},
+
+		2: {
+			normal: "Pasta med kyckling & currysås",
+			vego: "Pasta med ratatouille & tofu"
+		},
+
+		3: {
+			normal: "Pannbiff med tzatziki & klyftpotatis",
+			vego: "Spansk bondomelett (ägg, potatis, lök, grädde) toppas med grillade grönsaker"
+		},
+
+		4: {
+			normal: "Panerad fisk med remouladsås & potatis",
+			vego: "Grönsaksbiff med remouladsås & potatis"
+		},
+
+		5: {
+			normal: "Taco på nötfärs serveras med nachos, ris & salsa",
+			vego: "Taco på sojafärs"
+		}
+	},
+	
+	50: {
+		1: {
 			normal: "",
 			vego: ""
 		},
