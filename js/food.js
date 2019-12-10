@@ -7,7 +7,7 @@ var food = {
 		},
 
 		2: {
-			normal: "Green Burger med bröd",
+			normal: "Kyckling Teriyaki(soja, ingefära, grönsaker) serveras med ris",
 			vego: "Moussaka (sojafärs, spenat, potatis, zucchini & fetaost)"
 		},
 
