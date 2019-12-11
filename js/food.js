@@ -34,16 +34,18 @@ var food = {
 		},
 
 		2: {
-			normal: "Jullunch ;)"
+			normal: "Jullunch ;)",
+			vego: " "
 		},
 
 		3: {
-			normal: "Pannkaker me sylt å grädde"
+			normal: "Pannkaker me sylt å grädde",
+			vego: " "
 		},
 
 		4: {
 			normal: "Spaget",
-			vego: ""
+			vego: " "
 		},
 
 		5: {
