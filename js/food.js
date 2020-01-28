@@ -84,6 +84,60 @@ var food = {
 		
 	6: {
 		1: {
+			normal: "Pastagratäng med kalkon, ärtor & ost",
+			vego: "Pastagratäng med ratatouille, tofu & ost"
+		},
+
+		2: {
+			normal: "Panerad fisk med tartarsås & potatis",
+			vego: "Grönsaksbiff med tartarsås & potatis"
+		},
+
+		3: {
+			normal: "Kycklingfilé i örtsås serveras med ris",
+			vego: "Moussaka (sojafärs, spenat, potatis, zucchini & fetaost)"
+		},
+
+		4: {
+			normal: "Köttbullar med pasta & tomatsås",
+			vego: "Vegobullar med pasta & tomatsås"
+		},
+
+		5: {
+			normal: "Natbakad fläskytterfilé med bearnaisesås & klyftpotatis",
+			vego: "Stekt quornfilé med bearnaisesås & klyftpotatis"
+		}
+	},
+	
+	7: {
+		1: {
+			normal: "Korv Stroganoff serveras med ris",
+			vego: "Vegetarisk Stroganoff serveras med ris"
+		},
+
+		2: {
+			normal: "Kryddjärpar med ajvardressing & klyftpotatis",
+			vego: "Falafelbiff med ajvardressing & klyftpotatis"
+		},
+
+		3: {
+			normal: "Kycklingwok serveras med ris",
+			vego: "Grönsakswok serveras med ris"
+		},
+
+		4: {
+			normal: "Pasta Carbonara",
+			vego: "Provensalsk gryta med edemame bönor & linser serveras med pasta"
+		},
+
+		5: {
+			normal: "Kebab med pitabröd, sallad, vitlöksdressing & ris",
+			vego: "Kebabkryddad soja med pitabröd, sallad, vitlöksdressing & ris"
+		}
+	},
+	
+	8: {
+		1: {
 			normal: "",
 			vego: ""
 		},
