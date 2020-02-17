@@ -138,6 +138,35 @@ var food = {
 	
 	8: {
 		1: {
+			normal: "Köttbullar serveras med potatismos & lingonsylt",
+			vego: "Morotsbullar serveras med potatismos & lingonsylt"
+		},
+
+		2: {
+			normal: "Sprödbakad torsk med kall dillsås & kokt potatis",
+			vego: "Broccoli & blomkålsgratäng med tofu"
+		},
+
+		3: {
+			normal: "Kyckling i gul curry med mangochutney-kräm och ris",
+			vego: "Vegobiff med mangochutney-kräm och ris
+"
+		},
+
+		4: {
+			normal: "Spagetti med köttfärssås",
+			vego: "Spagetti med sojafärssås"
+		},
+
+		5: {
+			normal: "Chicken nuggets med BBQ-majonnäs & klyftpotatis",
+			vego: "Vegetarisk schnitzel med BBQ-majonnäs & klyftpotatis"
+		}
+	},
+	
+		
+	9: {
+		1: {
 			normal: "",
 			vego: ""
 		},
@@ -160,6 +189,34 @@ var food = {
 		5: {
 			normal: "",
 			vego: ""
+		}
+	},
+	
+		
+	10: {
+		1: {
+			normal: "Tomatöverbakad falukorv serveras med pasta & riven ost",
+			vego: "Tomatöverbakad vegokorv serveras med pasta & riven ost"
+		},
+
+		2: {
+			normal: "Tandoorigryta med kyckling serveras med ris & myntayoghurt",
+			vego: "Spansk bondomelett (ägg, potatis, lök, grädde) toppas med grillade grönsaker"
+		},
+
+		3: {
+			normal: "Grekisk färsbiff med fetaostkräm & klyftpotatis",
+			vego: "Caribbean biff med fetaostkräm & klyftpotatis"
+		},
+
+		4: {
+			normal: "Gulaschsoppa serveras med mjukt bröd & gräddfil",
+			vego: "Vegetarisk gulaschsoppa serveras med mjukt bröd & gräddfil"
+		},
+
+		5: {
+			normal: "Taco på nötfärs serveras med nachos, ris & salsa",
+			vego: "Taco på sojafärs serveras med nachos, ris & salsa"
 		}
 	},
 
