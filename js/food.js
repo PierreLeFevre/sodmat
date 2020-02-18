@@ -149,8 +149,7 @@ var food = {
 
 		3: {
 			normal: "Kyckling i gul curry med mangochutney-kräm och ris",
-			vego: "Vegobiff med mangochutney-kräm och ris
-"
+			vego: "Vegobiff med mangochutney-kräm och ris"
 		},
 
 		4: {
@@ -167,8 +166,8 @@ var food = {
 		
 	9: {
 		1: {
-			normal: "",
-			vego: ""
+			normal: "Ha ett trevligt sportlov!",
+			vego: "Vegetarianerna också! :)"
 		},
 
 		2: {
