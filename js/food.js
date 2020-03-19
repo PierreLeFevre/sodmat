@@ -268,8 +268,8 @@ var food = {
 		},
 
 		5: {
-			normal: "",
-			vego: ""
+			normal: "Subway Chicken Teriyaki Felldin Style",
+			vego: "soppa direkt ur burken"
 		}
 	},
 
