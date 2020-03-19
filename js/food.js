@@ -218,5 +218,59 @@ var food = {
 			vego: "Taco på sojafärs serveras med nachos, ris & salsa"
 		}
 	},
+	
+	11: {
+		1: {
+			normal: "",
+			vego: ""
+		},
+
+		2: {
+			normal: "",
+			vego: ""
+		},
+
+		3: {
+			normal: "",
+			vego: ""
+		},
+
+		4: {
+			normal: "",
+			vego: ""
+		},
+
+		5: {
+			normal: "",
+			vego: ""
+		}
+	},
+	
+	12: {
+		1: {
+			normal: "",
+			vego: ""
+		},
+
+		2: {
+			normal: "",
+			vego: ""
+		},
+
+		3: {
+			normal: "",
+			vego: ""
+		},
+
+		4: {
+			normal: "Tortelini",
+			vego: "Laxpasta"
+		},
+
+		5: {
+			normal: "",
+			vego: ""
+		}
+	},
 
 };
