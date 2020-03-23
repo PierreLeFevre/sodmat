@@ -29,7 +29,7 @@ var food = {
 	
 	13: {
 		1: {
-			normal: "schniztel, fryst",
+			normal: "schniztel fryst",
 			vego: "Dagsgammal sushi"
 		},
 
