@@ -34,8 +34,8 @@ var food = {
 		},
 
 		2: {
-			normal: "",
-			vego: ""
+			normal: "Phasgetti",
+			vego: "Snabbnudlar"
 		},
 
 		3: {
